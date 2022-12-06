@@ -18,16 +18,15 @@ const CartDetail = () => {
                 </thead>
                 <tbody>
                     {ctx.cartList.map(item =>
-                        {return <>
-                        <tr key={item.id}>
+                        (<tr key={item.id}>
                             <th><img src={item.image} alt="" /></th>
                             <th>{item.name}</th>
                             <th>${item.price}</th>
                             <th>{item.qty}</th>
                             <th>${ctx.calcSubtotalbyItem(item.id)}</th>
                             <th><i className="fa fa-trash" onClick={() => ctx.deleteItem(item.id)} title="Eliminar"></i></th>
-                        </tr>
-                        </> }
+                        </tr>)
+                        
                     )}
                 </tbody>
             </table>
