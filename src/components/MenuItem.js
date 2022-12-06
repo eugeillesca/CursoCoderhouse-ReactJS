@@ -5,7 +5,6 @@ const MenuItem = ({name}) => {
         <li>
              <Link to={`/category/${name}`}>{name}
                 </Link>
-            {/* <NavLink to=`/category/${name}`>{name}</NavLink> */}
         </li>
     );
 }
