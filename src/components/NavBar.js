@@ -7,7 +7,7 @@ const NavBar = () => {
         <>
             <nav className='navbar'>
                 <Brand name="todo moda"/>
-                <CartWidget cant="3"/>
+                <CartWidget />
             </nav>
             <Menu />
         </>

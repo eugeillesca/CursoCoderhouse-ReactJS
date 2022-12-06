@@ -5,8 +5,8 @@ const ItemList = ({items}) => {
     return (
         <>
         {items.map(item => (
-        <div className='element'>
-            <div>
+        <div key={item.id} className='element'>
+            <div className='title'>
                 <div>
                     <h4>
                         <Link to={`/item/${item.id}`}>{item.name}</Link></h4>
@@ -19,7 +19,7 @@ const ItemList = ({items}) => {
                 
             </div>
             <div>
-                <img width="224px" src={item.image} alt="" />
+                <img width="100%" height= "268px" src={item.image} alt="" />
             </div>
         </div>
         ))}
